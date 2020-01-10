@@ -1,4 +1,4 @@
-Note: This was a experimental build so no more updates for this proj. A new bullet project for web is being created to work with [Dragome backend](https://github.com/xpenatan/dragome-backend). Its auto generated and controlled by the base c++ project so its easier to manage.
+Note: Forked from [here](https://github.com/xpenatan/gdx-bullet-gwt), updated by myself to use gradle and be includable in libGDX projects easily.
 
 # gdx-bullet-gwt
 Bullet extension for libgdx html5
@@ -7,7 +7,8 @@ This extension emulate java bullet extension to use ammo.js instead of c++ jni. 
 
 If you going to help try to keep js calls as low as possible because there is a weird error "Maximum call stack size exceeded" that can occur. 
 
-You will need to work with Gdx sources.
+# Dependencies
+(maven and gradle links)
 
 # Instructions
 1 - GwtBullet.init() needs to be called before return ApplicationListener at getApplicationListener().  
@@ -15,9 +16,6 @@ You will need to work with Gdx sources.
 3 - Have to include \<inherits name="com.badlogic.gdx.physics.bullet.bullet-gwt"/> in gwt.xml file.  
 4 - For gdx-tests-gwt to work you need to remove System.load from BaseBulletTest.java.
 
-# Demos
-* [XpeEngine](https://xpenatan.github.io/XpeEngine/) ([link](https://www.youtube.com/watch?v=TAwMsJMaEC0))
-* [gdx-tests](http://xpenatan.github.io/gdx-bullet-gwt/gdx-tests/) ([link](https://github.com/libgdx/libgdx)) (ImportTest and SoftMeshTest not included becuase it crash)
-* [GdxDemo3D](http://xpenatan.github.io/gdx-bullet-gwt/GdxDemo3D/) ([link](https://github.com/jsjolund/GdxDemo3D)) (Experimental. FPS increase if you change house level view)
+
 
 
