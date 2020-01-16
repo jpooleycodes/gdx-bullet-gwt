@@ -1,0 +1,51 @@
+
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        google()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+        jcenter()
+    }
+    dependencies {
+        classpath 'org.wisepersist:gwt-gradle-plugin:1.0.10'
+    }
+
+}
+allprojects{
+    apply plugin: 'gwt'
+    apply plugin: 'java-library'
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+        google()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+    }
+}
+
+
+gwt {
+    gwtVersion='2.8.0'
+    modules 'bullet-gwt'
+}
+
+
+project(":gdx-bullet-gwt"){
+
+    gwt {
+        gwtVersion='2.8.0'
+        modules 'bullet-gwt'
+    }
+
+    dependencies {
+
+        api "com.badlogicgames.gdx:gdx:$gdxVersion"
+        api "com.badlogicgames.gdx:gdx:$gdxVersion:sources"
+        api "com.badlogicgames.gdx:gdx-backend-gwt:$gdxVersion"
+        api "com.badlogicgames.gdx:gdx-backend-gwt:$gdxVersion:sources"
+        api "com.badlogicgames.gdx:gdx-bullet:$gdxVersion"
+
+    }
+}
