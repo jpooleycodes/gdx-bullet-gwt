@@ -22,10 +22,11 @@ api "gdx-bullet-gwt:gdx-bullet-gwt:unspecified:sources"
 
 to your html build.gradle dependencies.
 
-# Instructions
-1. Add the gdx-bullet-gwt.jar to your project class path (see dependencies)
-2. GwtBullet.init() needs to be called before return ApplicationListener at getApplicationListener().  
-3. Have to include \<inherits name="com.badlogic.gdx.physics.bullet.bullet-gwt"/> in gwt.xml file. 
+# Instructions (in any particular order)
+- Add the gdx-bullet-gwt.jar to your project class path (see dependencies)
+- Add ***<script src="html/ammo.js"/>*** * to your index.html
+- Bullet.initVariables() needs to be called before return ApplicationListener at getApplicationListener().  
+- Have to include \<inherits name="com.badlogic.gdx.physics.bullet.bullet-gwt"/> in gwt.xml file. 
   
 
 
