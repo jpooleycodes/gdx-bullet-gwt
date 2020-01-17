@@ -8,13 +8,21 @@ This extension emulate java bullet extension to use ammo.js instead of c++ jni. 
 If you going to help try to keep js calls as low as possible because there is a weird error "Maximum call stack size exceeded" that can occur. 
 
 # Dependencies
-(maven and gradle links)
+
+I'll put up the compiled jar that I having working for myself + sources if necessary.
+
+Otherwise, simply cloning this project and typing ***gradlew install*** will add it to your local gradle repository.
+
+Then, add:
+
+
 
 # Instructions
-1 - GwtBullet.init() needs to be called before return ApplicationListener at getApplicationListener().  
-2 - Have to place bullet.gwt.xml file in gdx-bullet project at com.badlogic.gdx.physics.  
-3 - Have to include \<inherits name="com.badlogic.gdx.physics.bullet.bullet-gwt"/> in gwt.xml file.  
-4 - For gdx-tests-gwt to work you need to remove System.load from BaseBulletTest.java.
+1 - Add the gdx-bullet-gwt.jar to your project class path (see dependencies)
+2 - GwtBullet.init() needs to be called before return ApplicationListener at getApplicationListener().  
+3 - Have to include \<inherits name="com.badlogic.gdx.physics.bullet.bullet-gwt"/> in gwt.xml file. 
+  
+
 
 
 
