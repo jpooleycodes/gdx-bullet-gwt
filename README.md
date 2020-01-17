@@ -15,12 +15,17 @@ Otherwise, simply cloning this project and typing ***gradlew install*** will add
 
 Then, add:
 
+```$xslt
+api "gdx-bullet-gwt:gdx-bullet-gwt:unspecified"
+api "gdx-bullet-gwt:gdx-bullet-gwt:unspecified:sources"
+```
 
+to your html build.gradle dependencies.
 
 # Instructions
-1 - Add the gdx-bullet-gwt.jar to your project class path (see dependencies)
-2 - GwtBullet.init() needs to be called before return ApplicationListener at getApplicationListener().  
-3 - Have to include \<inherits name="com.badlogic.gdx.physics.bullet.bullet-gwt"/> in gwt.xml file. 
+1. Add the gdx-bullet-gwt.jar to your project class path (see dependencies)
+2. GwtBullet.init() needs to be called before return ApplicationListener at getApplicationListener().  
+3. Have to include \<inherits name="com.badlogic.gdx.physics.bullet.bullet-gwt"/> in gwt.xml file. 
   
 
 
