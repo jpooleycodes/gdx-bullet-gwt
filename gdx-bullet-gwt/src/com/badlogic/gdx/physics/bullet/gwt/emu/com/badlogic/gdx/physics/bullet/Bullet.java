@@ -21,7 +21,6 @@ import com.badlogic.gdx.physics.bullet.collision.btPersistentManifold;
 import com.badlogic.gdx.physics.bullet.dynamics.btConstraintSetting;
 import com.badlogic.gdx.physics.bullet.dynamics.btWheelInfo;
 import com.badlogic.gdx.physics.bullet.dynamics.btWheelInfo.RaycastInfo;
-import com.badlogic.gdx.physics.bullet.gwt.GwtBullet;
 import com.badlogic.gdx.physics.bullet.linearmath.btMatrix3x3;
 import com.badlogic.gdx.physics.bullet.linearmath.btQuaternion;
 import com.badlogic.gdx.physics.bullet.linearmath.btTransform;
@@ -66,13 +65,6 @@ public class Bullet
 		public static LocalShapeInfo TMP_LocalShapeInfo_1 = new LocalShapeInfo();
 		public static LocalRayResult TMP_LocalRayResult_1 = new LocalRayResult();
 		public static btSparseSdf3 TMP_btSparseSdf3_1 = new btSparseSdf3();
-		
-	//*****
-	
-	public static void init()
-	{
-		GwtBullet.init();
-	}
 
 	public static void initVariables()
 	{
